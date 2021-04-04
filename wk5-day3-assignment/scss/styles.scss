@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+@import "colors";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+$max-width: 80em;
+
+.main-wrapper {
+    width: 100%;
+
+      .header{
+      background-image: linear-gradient(to right, $six,$three);
+      width:100%;
+      height:10em;
+      text-align: center;
+      padding-top: 2em;
+      display: flex;
+    }
+
+div[id="vue"] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .products {
+      display: grid;
+      width: 80%;
+      // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      row-gap: 1.5rem;
+    }
+
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      width: 12rem;
+      border: 1px solid #fff;
+
+      image {
+        height: 70%;
+      }
+
+      .description {
+        display: grid;
+        grid-auto-rows: 1fr;
+        text-align: center;
+
+        .name {
+          padding: 0.2rem;
+          font-size: 12px;
+        }
+
+        #button {
+          line-height: 1.5rem;
+          width: 5.5rem;
+          background: $white;
+        }
+
+        .name, #button {
+          justify-self: center;
+          align-self: center;
+        }
+      }
+    }
+  }
+} 
+

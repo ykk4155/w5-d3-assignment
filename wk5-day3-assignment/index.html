@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Module 4 Week 1 Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Fresh Food To Go</h1>
+    </div>
+   <div class="main-wrapper">
+    <div id="vue">
+        <h2 style="margin:2rem">Selections</h2>
+        <div class="products">
+           <div class="product" v-for="item in items">
+               <img class="image" :src="item.image" alt="">
+               <h1 class="name">{{item.item}}</h1>
+               <p class ="description">{{item.description}}</p>
+               <button id="button">Add to cart</button>
+           </div>
+       </div>
+    </div>
+
+</div>
+<script src ="main.js"></script>
+</body>
+</html>
